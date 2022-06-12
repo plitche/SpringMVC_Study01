@@ -1,0 +1,15 @@
+	18. 서블릿 - 정리
+		*HttpServletRequest
+			- Http요청 스펙을 편리하게 사용할 수 있도록 함.
+			
+			- 요청 메시지를 통해 클라이언트에서 서버로 데이터를 전달하는 방법
+				> GET: 쿼리 파라미터
+				> POST: HTML Form
+				> HTTP message body에 데이터를 직접 담아서 요청
+				
+		*HttpServletResponse
+			- 단순 텍스트 응답
+			- HTML
+			- API JSON
+			
+			
