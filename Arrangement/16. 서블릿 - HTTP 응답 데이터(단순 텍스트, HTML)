@@ -1,0 +1,7 @@
+	16. 서블릿 - HTTP 응답 데이터(단순 텍스트, HTML)
+		* 단순 텍스트 응답
+			- wirter.println("ok");
+		* HTML 응답
+		* HTTP API - Message Body Json 응답
+		
+		
