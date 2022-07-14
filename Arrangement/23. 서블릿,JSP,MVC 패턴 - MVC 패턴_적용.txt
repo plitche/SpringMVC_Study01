@@ -1,0 +1,3 @@
+	23. 서블릿,JSP,MVC 패턴 - MVC 패턴_적용
+		- Model은 httpServletRequest 객체를 사용한다. request는 내부에 데이터 저장소를 가지고 있다.
+		
