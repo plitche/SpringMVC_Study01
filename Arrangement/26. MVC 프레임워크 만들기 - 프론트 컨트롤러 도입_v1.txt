@@ -1,0 +1,9 @@
+	26. MVC 프레임워크 만들기 - 프론트 컨트롤러 도입_v1
+		*V1 구조
+			1. 클라이언트(HTTP 요청) -> Front Controller
+			2. Front Controller(URL 매핑정보에서 컨트롤러 조회) -> 매핑 정보
+			3. Front Controller(컨트롤러 호출) -> Controller
+			4. Controller(컨트롤러에서 JSP forward) -> JSP
+			5. JSP(HTML 응답) -> 클라이언트
+			
+			
