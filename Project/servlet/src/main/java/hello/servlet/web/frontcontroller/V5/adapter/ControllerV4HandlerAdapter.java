@@ -3,7 +3,6 @@ package hello.servlet.web.frontcontroller.V5.adapter;
 import hello.servlet.web.frontcontroller.ModelView;
 import hello.servlet.web.frontcontroller.V5.MyHandlerAdapter;
 import hello.servlet.web.frontcontroller.v4.ControllerV4;
-import org.springframework.ui.Model;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
