@@ -1,0 +1,23 @@
+	35. 스프링MVC_구조이해 - 뷰 리졸버
+		- 뷰 리졸버 : InternalReseourceViewREsolver
+			> 스프링 부트는 InternalReseourceViewResolver라는 뷰 리졸버를 자동으로 등록하는데, 이때 application.properties에 등록한 prefix, suffix 설정정보를 사용해서 등록한다.
+	
+		- 스프링 부트가 자동으로 등록하는 뷰 리졸버(실제로는 더 많지만 중요한 부분 위주 설명)
+			> 1 = BeanNameViewResolver : 빈 이름으로 뷰를 찾아서 반환한다.
+			> 2 = InternalReseourceViewResolver : JSP를 처리할 수 있는 뷰를 반환한다.
+			
+		1. 핸들러 어댑터 호출
+			> 핸들러 어댑터를 통해 'new-form'이라는 논리 뷰 이름을 획득한다.
+		2. ViewREsolver 호출
+			> 'new-form'이라는 뷰 이름으로 ViewResolver를 순서대로 호출한다.
+			> BeanNameViewResolver는 new-form이라는 이름의 스프링 빈으로 등록된 뷰를 찾아야 하는데 없다.
+			> InternalReseourceViewResolver가 호출된다.
+			
+		3. InternalReseourceViewResolver
+			> 이 뷰 리졸버는 InternalResourceView를 반환한다.
+			
+		4. 뷰 - InternalReseourceView
+			> InternalReseourceView는 JSP처럼 포워드(forward())를 호출해서 처리할 수 있는 경우에 사용한다.
+			
+		5. view.render()
+			> view.render()가 호출되고 InternalReseourceView는 forward()를 사용해서 JSP를 실행한다.
