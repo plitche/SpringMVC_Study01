@@ -1,0 +1,4 @@
+	42. 스프링 MVC(기본 기능) - 요청 매핑
+		* @RestCOntroller
+			- 반환값이 String 이면 일반적인 controller는 뷰 이름으로 인식된다. 그래서 뷰를 찾고 뷰가 랜더링된다.
+			- RestCOntroller는 반환 값으로 뷰를 찾는것이 아니라 HTTP 메시지 바디에 바로 입력한다.
