@@ -1,0 +1,6 @@
+	44. 스프링 MVC(기본 기능) - HTTP요청(기본, 헤더 조회)
+		* MutiValueMap
+			- Map과 유사한데, 하나의 키에 여러 값을 받을 수 있다.
+			- HTTTP header, HTTP 쿼리 파라미터와 같이 하나의 키에 여러값을 받을 때 사용한다.
+				> keyA=value1&keyA=value2
+			- 해당 key로 꺼내면 배열로 반환이 된다.
