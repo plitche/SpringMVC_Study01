@@ -10,3 +10,11 @@
 -!
 
 
+## 43. 스프링 MVC(기본 기능) - 요청 매핑(API 예시)
+ 1. 회원 목록 조회: GET   /users
+ 2. 회원 등록: POST   /users
+ 3. 회원 조회: GET    /users/{userId}
+ 4. 회원 수정: PATCH   /users/{userId}
+ 5. 회원 삭제: DELETE    /users/{userId}
+ 
+ 
