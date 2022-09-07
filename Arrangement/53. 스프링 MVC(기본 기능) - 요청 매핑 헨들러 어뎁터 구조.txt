@@ -1,1 +1,15 @@
 	53. 스프링 MVC(기본 기능) - 요청 매핑 헨들러 어뎁터 구조
+		* 모든 비밀은 애노테이션 기반의 컨트롤러 @RequestMapping을 처리하는 핸들러 어댑터인
+			RequestMappingHandlerAdapter(요청 매핑 핸들러 어뎁터)에 있다.
+			
+		* 동작 방식
+			1. 컨트롤러의 파라미터, 애노테이션 정보를 기반으로 전달 데이터 생성
+			2. 호출
+			3. 컨트롤러의 반환 값을 변환
+			
+		* 애노테이션 기반의 컨트롤러는 매우 다양한 파리머틀ㄹ 사용할 수 있었다.
+			> HttpServletRequest, Model
+			> @RequestParam, @ModelAttribute
+			> @RequestBody, HttpEntity
+			
+			: 이렇게 파라미터를 유연하게 처리할 수 있는 이유가 ArgumentResolver 덕분이다.
