@@ -42,7 +42,7 @@ public class BasicItemController {
         return "basic/addForm";
     }
 
-    @PostMapping("/add")
+    // @PostMapping("/add")
     public String addItemV1(@RequestParam String itemName,
                        @RequestParam int price,
                        @RequestParam Integer quantity,
@@ -85,6 +85,14 @@ public class BasicItemController {
         // @ModelAttribute 생략 가능
         itemRepository.save(item);
         return "basic/addForm";
+    }
+
+    @PostMapping("/add")
+    public String addItemV5(Item item) {
+        // @ModelAttribute 생략 가능
+        itemRepository.save(item);
+        return "redirect:/basic/items/" + item.getId(); // 한글이나 띄어쓰기, 특수문자가 있으면 인코딩해야한다.
+        // return "basic/addForm";
     }
 
     @GetMapping("/{itemId}/edit")
